@@ -27,9 +27,9 @@ jobs:
     - name: Initialize Repo
       run: |
         mkdir -p ~/bin
-        curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+        curl -sSL https://storage.googleapis.com/git-repo-downloads/repo -o ~/bin/repo
         chmod a+x ~/bin/repo
-        export PATH=~/bin:$PATH
+        echo "$HOME/bin" >> $GITHUB_PATH
         mkdir -p device/xiaomi/camellia
         git clone https://github.com/Vertuozer/device_xiaomi_camellia-twrp.git device/xiaomi/camellia
         repo init -u https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp -b twrp-12.1 --depth=1
