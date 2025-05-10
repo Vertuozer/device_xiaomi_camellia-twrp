@@ -45,5 +45,4 @@ jobs:
       with:
         name: TWRP_Artifacts
         path: |
-          out/target/product/<device_codename>/boot.img
-          out/target/product/<device_codename>/recovery.img
+          out/target/product/camellia/boot.img
