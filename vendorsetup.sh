@@ -38,8 +38,8 @@ fi
 
 if [ "$1" = "$FDEVICE" ] || [  "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 		# Version / Maintainer infos
-		export OF_MAINTAINER="AskneZZZ"
-		export FOX_VERSION=R12.1
+		export OF_MAINTAINER="Vertuozer"
+		export FOX_MAINTAINER_PATCH_VERSION=1
 		export FOX_BUILD_TYPE="Stable"
 
 		# Device info
